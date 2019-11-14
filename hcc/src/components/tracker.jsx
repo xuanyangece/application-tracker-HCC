@@ -10,8 +10,8 @@ class Tracker extends Component {
   render() {
     return (
       <div>
-        <span></span>
-        <button></button>
+        <span>hello</span>
+        <button>hello</button>
         <Box />
       </div>
     );
