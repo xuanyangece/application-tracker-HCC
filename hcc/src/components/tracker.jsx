@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import Box from "./applicationBox";
 import Header from "./applicationHeader";
+import Container from "react-bootstrap/Container";
+import { container } from "../styles/styles";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import { withRouter } from "react-router-dom";
 
 class Tracker extends Component {
   state = {
@@ -61,15 +65,16 @@ class Tracker extends Component {
 
   render() {
     return (
-      <div>
-        <Header />
-
-        {this.state.boxes.map(box => (
-          <Box key={box.id} box={box}></Box>
-        ))}
-      </div>
+      <Container style={container}>
+        <Jumbotron>
+          <Header />
+          {this.state.boxes.map(box => (
+            <Box key={box.id} box={box}></Box>
+          ))}
+        </Jumbotron>
+      </Container>
     );
   }
 }
 
-export default Tracker;
+export default withRouter(Tracker);
