@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Row from "./applicationRow";
+import AppRow from "./applicationRow";
 
 class Box extends Component {
   state = {};
@@ -13,7 +13,7 @@ class Box extends Component {
       <div className="applicationRow" style={this.boxStyle}>
         <h4>{box.title}</h4>
         {box.applications.map(application => (
-          <Row application={application} />
+          <AppRow application={application} />
         ))}
       </div>
     );
