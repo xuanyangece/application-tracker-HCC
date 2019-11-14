@@ -2,13 +2,16 @@ import React, { Component } from "react";
 import ButtonBar from "./headerButtonBar";
 
 class Header extends Component {
-  state = {};
+  styles = {
+    backgroundColor: "green",
+    display: "flex"
+  };
+
   render() {
     return (
-      <div>
-        {this.renderLogo()}
+      <span style={this.styles}>
         <ButtonBar />
-      </div>
+      </span>
     );
   }
 }

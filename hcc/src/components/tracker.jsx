@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Box from "./applicationBox";
+import Header from "./applicationHeader";
 
 class Tracker extends Component {
   state = {
@@ -10,8 +11,7 @@ class Tracker extends Component {
   render() {
     return (
       <div>
-        <span>hello</span>
-        <button>hello</button>
+        <Header />
         <Box />
       </div>
     );
