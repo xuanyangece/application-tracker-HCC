@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
+import Button from "react-bootstrap/Button";
 import { DatePickerInput } from "rc-datepicker";
 import "rc-datepicker/lib/style.css";
+import { TiBusinessCard } from "react-icons/ti";
+import { MdInsertLink } from "react-icons/md";
 
 class Row extends Component {
   state = {
@@ -23,9 +26,18 @@ class Row extends Component {
     display: "inline-block"
   };
 
+  btStyle = {
+    margin: "auto 20px",
+    paddingLeft: "20px",
+    paddingRight: "20px"
+  };
+
+  icStyle = {};
+
   render() {
     const { application } = this.props;
     console.log(this.props);
+
     return (
       <div className="applicationRow" style={this.rowStyle}>
         <p style={this.pStyle}>{application.company}</p>
@@ -43,6 +55,12 @@ class Row extends Component {
         </Dropdown>
 
         {this.dateDisplay(application)}
+
+        <Button variant="light" style={this.btStyle}>
+          Update
+        </Button>
+        <TiBusinessCard />
+        <MdInsertLink />
       </div>
     );
   }
