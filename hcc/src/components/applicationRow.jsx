@@ -42,15 +42,25 @@ class Row extends Component {
           </Dropdown.Menu>
         </Dropdown>
 
+        {this.dateDisplay(application)}
+      </div>
+    );
+  }
+
+  dateDisplay = application => {
+    if (application.status == "Offer" || application.status == "Rejected") {
+      return <p style={this.pStyle}>{this.props.application.date}</p>;
+    } else {
+      return (
         <DatePickerInput
           onChange={this.onChange}
           value={application.date}
           className="my-custom-datepicker-component"
           style={this.calStyle}
         />
-      </div>
-    );
-  }
+      );
+    }
+  };
 
   onChange = (jsDate, dateString) => {
     // ...
