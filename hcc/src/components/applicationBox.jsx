@@ -4,7 +4,12 @@ import Row from "./applicationRow";
 class Box extends Component {
   state = {};
   render() {
-    return <Row />;
+    return (
+      <React.Fragment>
+        <Row />
+        <Row />
+      </React.Fragment>
+    );
   }
 }
 
