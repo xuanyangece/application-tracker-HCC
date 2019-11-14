@@ -8,11 +8,7 @@ class Header extends Component {
   };
 
   render() {
-    return (
-      <span style={this.styles}>
-        <ButtonBar />
-      </span>
-    );
+    return <ButtonBar />;
   }
 }
 
