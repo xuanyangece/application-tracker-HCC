@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Box from "./applicationBox";
 import Header from "./applicationHeader";
 import Container from "react-bootstrap/Container";
-import { container } from "../styles/styles";
+import { container } from "../styles/styles.css";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import { withRouter } from "react-router-dom";
 

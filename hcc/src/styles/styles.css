@@ -1,0 +1,16 @@
+.container {
+  padding-top: 10px;
+}
+
+.newapp {
+  margin-top: 80px;
+  text-align: center;
+  width: 40%;
+}
+
+.titles {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: xx-large;
+}
