@@ -12,7 +12,7 @@ class ButtonBar extends Component {
   render() {
     return (
       <Container style={container}>
-        <Jumbotron>
+        <Jumbotron className="sub-jbt">
           <Row>
             <Col xs={8}>
               <IconContext.Provider

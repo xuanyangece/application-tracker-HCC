@@ -66,7 +66,7 @@ class Tracker extends Component {
   render() {
     return (
       <Container style={container}>
-        <Jumbotron>
+        <Jumbotron className="jbt">
           <Header />
           {this.state.boxes.map(box => (
             <Box key={box.id} box={box}></Box>

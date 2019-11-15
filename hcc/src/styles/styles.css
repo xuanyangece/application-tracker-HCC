@@ -1,5 +1,6 @@
 .container {
   padding-top: 10px;
+  height: 10%;
 }
 
 .newappform {
@@ -40,4 +41,13 @@
 
 .boxTitle {
   color: black;
+}
+
+.jbt {
+  padding-top: 0;
+}
+
+.sub-jbt {
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
