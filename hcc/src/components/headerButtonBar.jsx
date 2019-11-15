@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import { container } from "../styles/styles";
+import { container } from "../styles/styles.css";
 import { Link } from "react-router-dom";
 
 class ButtonBar extends Component {

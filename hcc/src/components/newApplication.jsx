@@ -2,17 +2,14 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
-import { container } from "../styles/styles";
+import "../styles/styles.css";
 
 class NewApplication extends Component {
-  state = {};
   render() {
     return (
-      <Container>
+      <Container className="newapp">
+        <p className="titles">New Application</p>
         <InputGroup className="mb-3">
-          <InputGroup.Prepend>
-            <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
-          </InputGroup.Prepend>
           <FormControl
             placeholder="Username"
             aria-label="Username"
