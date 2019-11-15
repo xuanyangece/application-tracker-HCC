@@ -23,6 +23,7 @@ class ButtonBar extends Component {
               >
                 <div>
                   <GiSpaceSuit />
+                  <h4>李加一最棒</h4>
                 </div>
               </IconContext.Provider>
             </Col>

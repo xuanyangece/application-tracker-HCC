@@ -18,8 +18,7 @@ class AppRow extends Component {
   };
 
   pStyle = {
-    display: "inline",
-    padding: "5px 25px"
+    marginTop: "7px"
   };
 
   rowStyle = {
@@ -46,16 +45,16 @@ class AppRow extends Component {
       <div className="applicationRow" style={this.rowStyle}>
         <Row>
           <Col sm={2}>
-            <p>{application.company}</p>
+            <p style={this.pStyle}>{application.company}</p>
           </Col>
 
           <Col sm={1}>
-            <p>{application.position}</p>
+            <p style={this.pStyle}>{application.position}</p>
           </Col>
 
           <Col xs={2}>
             <Dropdown>
-              <Dropdown.Toggle variant="" id="dropdown-basic">
+              <Dropdown.Toggle variant="light" id="dropdown-basic">
                 {this.state.status}
               </Dropdown.Toggle>
 
