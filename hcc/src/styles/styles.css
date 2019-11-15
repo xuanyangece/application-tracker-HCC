@@ -2,8 +2,14 @@
   padding-top: 10px;
 }
 
-.newapp {
+.newappform {
   margin-top: 80px;
+  text-align: center;
+  width: 40%;
+}
+
+.newappbuttons {
+  margin-top: 30px;
   text-align: center;
   width: 40%;
 }

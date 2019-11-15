@@ -1,62 +1,75 @@
 import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
-import InputGroup from "react-bootstrap/InputGroup";
-import FormControl from "react-bootstrap/FormControl";
+import Alert from "react-bootstrap/Alert";
 import "../styles/styles.css";
+import Input from "./inputGroup";
+import { Link } from "react-router-dom";
 
 class NewApplication extends Component {
+  state = {
+    refered: false
+  };
   render() {
     return (
-      <Container className="newapp">
-        <p className="titles">New Application</p>
-        <InputGroup className="mb-3">
-          <FormControl
-            placeholder="Username"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-          />
-        </InputGroup>
+      <div>
+        <Container className="newappform">
+          <p className="titles">New Application</p>
+          <Input required={true} title="Company" />
+          <Input required={true} title="Position" />
+          <Input required={false} title="Position Link" />
+          <Input required={true} title="Date applied" />
+          <Input required={false} title="Portal Link" />
+          <label style={{ paddingRight: 250, marginRight: 180 }}>Resume</label>
+          {this.renderUpload()}
+          <label style={{ paddingRight: 250, marginRight: 200 }}>
+            Refered?
+          </label>
+          {this.renderReferButton(this.state)}
+        </Container>
 
-        <InputGroup className="mb-3">
-          <FormControl
-            placeholder="Recipient's username"
-            aria-label="Recipient's username"
-            aria-describedby="basic-addon2"
-          />
-          <InputGroup.Append>
-            <InputGroup.Text id="basic-addon2">@example.com</InputGroup.Text>
-          </InputGroup.Append>
-        </InputGroup>
-
-        <label htmlFor="basic-url">Your vanity URL</label>
-        <InputGroup className="mb-3">
-          <InputGroup.Prepend>
-            <InputGroup.Text id="basic-addon3">
-              https://example.com/users/
-            </InputGroup.Text>
-          </InputGroup.Prepend>
-          <FormControl id="basic-url" aria-describedby="basic-addon3" />
-        </InputGroup>
-
-        <InputGroup className="mb-3">
-          <InputGroup.Prepend>
-            <InputGroup.Text>$</InputGroup.Text>
-          </InputGroup.Prepend>
-          <FormControl aria-label="Amount (to the nearest dollar)" />
-          <InputGroup.Append>
-            <InputGroup.Text>.00</InputGroup.Text>
-          </InputGroup.Append>
-        </InputGroup>
-
-        <InputGroup>
-          <InputGroup.Prepend>
-            <InputGroup.Text>With textarea</InputGroup.Text>
-          </InputGroup.Prepend>
-          <FormControl as="textarea" aria-label="With textarea" />
-        </InputGroup>
-      </Container>
+        <Container className="newappbuttons">
+          {this.renderAddButton()}
+          {this.renderCancelButton()}
+        </Container>
+      </div>
     );
   }
+
+  renderAddButton = () => {
+    return (
+      <Link to="/">
+        <button className="btn-primary btn-lg m-1">Complete</button>
+      </Link>
+    );
+  };
+
+  renderCancelButton = () => {
+    return (
+      <Link to="/">
+        <button className="btn-primary btn-lg m-1">Cancel</button>
+      </Link>
+    );
+  };
+
+  renderUpload = () => {
+    return <button className="btn-primary btn-sm m-2">Upload</button>;
+  };
+
+  toggleRefered = prevState => {
+    this.setState(prevState => ({ refered: !prevState.refered }));
+  };
+
+  renderReferButton = () => {
+    return this.state.refered ? (
+      <button onClick={this.toggleRefered} className="btn-primary btn-sm m-2">
+        Yes
+      </button>
+    ) : (
+      <button onClick={this.toggleRefered} className="btn-warning btn-sm m-2">
+        No
+      </button>
+    );
+  };
 }
 
 export default NewApplication;
