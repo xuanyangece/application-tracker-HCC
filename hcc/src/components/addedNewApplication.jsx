@@ -89,7 +89,7 @@ class addedNewApplication extends Component {
   renderAlert = () => {
     if (this.state.alert) {
       return (
-        <Alert key={1} variant="success">
+        <Alert key={1} variant="success" style={{ width: "25%" }}>
           New application added!
           <button onClick={this.toggleAlert} className="btn-success btn-xs m-2">
             X
