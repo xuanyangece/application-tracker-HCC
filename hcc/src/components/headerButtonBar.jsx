@@ -5,6 +5,8 @@ import Col from "react-bootstrap/Col";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import { container } from "../styles/styles.css";
 import { Link } from "react-router-dom";
+import { GiSpaceSuit } from "react-icons/gi";
+import { IconContext } from "react-icons";
 
 class ButtonBar extends Component {
   render() {
@@ -12,7 +14,18 @@ class ButtonBar extends Component {
       <Container style={container}>
         <Jumbotron>
           <Row>
-            <Col xs={8}>LOGO</Col>
+            <Col xs={8}>
+              <IconContext.Provider
+                value={{
+                  className: "global-class-name",
+                  size: "4em"
+                }}
+              >
+                <div>
+                  <GiSpaceSuit />
+                </div>
+              </IconContext.Provider>
+            </Col>
             <Col>
               <Link to="/newapp">
                 <button className="btn-primary btn-sm m-1">
