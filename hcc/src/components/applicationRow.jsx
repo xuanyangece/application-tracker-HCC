@@ -6,6 +6,7 @@ import "rc-datepicker/lib/style.css";
 import { TiBusinessCard } from "react-icons/ti";
 import { MdInsertLink } from "react-icons/md";
 import { IconContext } from "react-icons";
+import "../styles/styles.css";
 
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -21,23 +22,10 @@ class AppRow extends Component {
     marginTop: "7px"
   };
 
-  rowStyle = {
-    margin: "10px auto"
-  };
-
   calStyle = {
     width: "200px",
     display: "inline-block"
   };
-
-  btStyle = {
-    margin: "auto 20px",
-    paddingLeft: "20px",
-    paddingRight: "20px"
-  };
-
-  icStyle = {};
-
   render() {
     const { application } = this.props;
 
@@ -131,7 +119,7 @@ class AppRow extends Component {
 
   dateDisplay = application => {
     if (application.status == "Offer" || application.status == "Rejected") {
-      return <p>{this.props.application.date}</p>;
+      return <p style={this.pStyle}>{this.props.application.date}</p>;
     } else {
       return (
         <DatePickerInput

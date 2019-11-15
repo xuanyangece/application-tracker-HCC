@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import AppRow from "./applicationRow";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import "../styles/styles.css";
 
 class Box extends Component {
   state = {};
@@ -14,28 +15,28 @@ class Box extends Component {
     const { box } = this.props;
 
     return (
-      <div className="applicationRow" style={this.boxStyle}>
-        <h4>{box.title}</h4>
+      <div className="applicationBox" style={this.boxStyle}>
+        <h4 className="boxTitle">{box.title}</h4>
 
         <Row>
           <Col sm={2}>
-            <p> Company </p>
+            <p className="appTitle"> Company </p>
           </Col>
 
           <Col sm={1}>
-            <p> Position </p>
+            <p className="appTitle"> Position </p>
           </Col>
 
           <Col xs={2}>
-            <p> {this.space} Status </p>
+            <p className="appTitle"> {this.space} Status </p>
           </Col>
 
           <Col xs={3}>
-            <p> Date </p>
+            <p className="appTitle"> Date </p>
           </Col>
 
           <Col>
-            <p> Update Status/Date</p>
+            <p className="appTitle"> Update Status/Date</p>
           </Col>
 
           <Col xs={1}></Col>
