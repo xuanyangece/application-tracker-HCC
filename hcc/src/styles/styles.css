@@ -22,9 +22,22 @@
 }
 
 .applicationBox {
+  padding: 10px 10px;
   color: grey;
+  border-radius: 15px 50px 30px;
+  border-color: goldenrod;
+  border: solid;
+  margin-bottom: 20px;
 }
 
 .applicationRow {
   margin: "10px auto";
+}
+
+.appTitle {
+  color: goldenrod;
+}
+
+.boxTitle {
+  color: black;
 }

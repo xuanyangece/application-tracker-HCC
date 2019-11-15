@@ -16,27 +16,27 @@ class Box extends Component {
 
     return (
       <div className="applicationBox" style={this.boxStyle}>
-        <h4>{box.title}</h4>
+        <h4 className="boxTitle">{box.title}</h4>
 
         <Row>
           <Col sm={2}>
-            <p> Company </p>
+            <p className="appTitle"> Company </p>
           </Col>
 
           <Col sm={1}>
-            <p> Position </p>
+            <p className="appTitle"> Position </p>
           </Col>
 
           <Col xs={2}>
-            <p> {this.space} Status </p>
+            <p className="appTitle"> {this.space} Status </p>
           </Col>
 
           <Col xs={3}>
-            <p> Date </p>
+            <p className="appTitle"> Date </p>
           </Col>
 
           <Col>
-            <p> Update Status/Date</p>
+            <p className="appTitle"> Update Status/Date</p>
           </Col>
 
           <Col xs={1}></Col>
