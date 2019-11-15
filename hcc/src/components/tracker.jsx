@@ -13,6 +13,7 @@ class Tracker extends Component {
       {
         id: 0,
         title: "Upcoming",
+        clsn: "applicationBox upcoming",
         applications: [
           {
             company: "Amazon",
@@ -27,6 +28,7 @@ class Tracker extends Component {
       {
         id: 1,
         title: "Pending",
+        clsn: "applicationBox pending",
         applications: [
           {
             company: "Citrix",
@@ -41,6 +43,7 @@ class Tracker extends Component {
       {
         id: 2,
         title: "Done",
+        clsn: "applicationBox done",
         applications: [
           {
             company: "Facebook",

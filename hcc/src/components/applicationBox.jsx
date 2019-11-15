@@ -15,7 +15,7 @@ class Box extends Component {
     const { box } = this.props;
 
     return (
-      <div className="applicationBox" style={this.boxStyle}>
+      <div className={box.clsn} style={this.boxStyle}>
         <h4 className="boxTitle">{box.title}</h4>
 
         <Row>
@@ -39,9 +39,13 @@ class Box extends Component {
             <p className="appTitle"> Update Status/Date</p>
           </Col>
 
-          <Col xs={1}></Col>
+          <Col xs={1}>
+            <p className="appTitle"> CV</p>
+          </Col>
 
-          <Col xs={1}></Col>
+          <Col xs={1}>
+            <p className="appTitle"> Portal</p>
+          </Col>
         </Row>
 
         {box.applications.map(application => (

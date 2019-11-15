@@ -24,8 +24,8 @@
 
 .applicationBox {
   padding: 10px 10px;
-  color: grey;
-  border-radius: 15px 50px 30px;
+  color: black;
+  border-radius: 15px 15px 15px 15px;
   border-color: goldenrod;
   border: solid;
   margin-bottom: 20px;
@@ -36,7 +36,7 @@
 }
 
 .appTitle {
-  color: goldenrod;
+  color: rgb(66, 66, 66);
 }
 
 .boxTitle {
@@ -50,4 +50,16 @@
 .sub-jbt {
   padding-top: 3%;
   padding-bottom: 3%;
+}
+
+.upcoming {
+  background-color: rgb(249, 203, 156);
+}
+
+.pending {
+  background-color: rgb(159, 197, 248);
+}
+
+.done {
+  background-color: rgb(182, 215, 168);
 }

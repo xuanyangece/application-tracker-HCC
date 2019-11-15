@@ -19,7 +19,8 @@ class AppRow extends Component {
   };
 
   pStyle = {
-    marginTop: "7px"
+    marginTop: "5px",
+    fontSize: "20px"
   };
 
   calStyle = {
@@ -42,7 +43,7 @@ class AppRow extends Component {
 
           <Col xs={2}>
             <Dropdown>
-              <Dropdown.Toggle variant="light" id="dropdown-basic">
+              <Dropdown.Toggle variant="light btn-block" id="dropdown-basic">
                 {this.state.status}
               </Dropdown.Toggle>
 
@@ -84,7 +85,7 @@ class AppRow extends Component {
           <Col xs={3}>{this.dateDisplay(application)}</Col>
 
           <Col>
-            <Button variant="light">Update</Button>
+            <Button variant="dark">Update</Button>
           </Col>
 
           <Col xs={1}>
