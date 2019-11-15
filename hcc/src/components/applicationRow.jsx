@@ -5,8 +5,8 @@ import { DatePickerInput } from "rc-datepicker";
 import "rc-datepicker/lib/style.css";
 import { TiBusinessCard } from "react-icons/ti";
 import { MdInsertLink } from "react-icons/md";
+import { IconContext } from "react-icons";
 
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -101,11 +101,29 @@ class AppRow extends Component {
           </Col>
 
           <Col xs={1}>
-            <TiBusinessCard />
+            <IconContext.Provider
+              value={{
+                className: "global-class-name",
+                size: "2em"
+              }}
+            >
+              <div>
+                <TiBusinessCard />
+              </div>
+            </IconContext.Provider>
           </Col>
 
           <Col xs={1}>
-            <MdInsertLink />
+            <IconContext.Provider
+              value={{
+                className: "global-class-name",
+                size: "2em"
+              }}
+            >
+              <div>
+                <MdInsertLink />
+              </div>
+            </IconContext.Provider>
           </Col>
         </Row>
       </div>
