@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import AppRow from "./applicationRow";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import "../styles/styles.css";
 
 class Box extends Component {
   state = {};
@@ -14,7 +15,7 @@ class Box extends Component {
     const { box } = this.props;
 
     return (
-      <div className="applicationRow" style={this.boxStyle}>
+      <div className="applicationBox" style={this.boxStyle}>
         <h4>{box.title}</h4>
 
         <Row>
