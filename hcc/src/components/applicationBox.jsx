@@ -18,6 +18,10 @@ class Box extends Component {
       </div>
     );
   }
+
+  update = () => {
+    this.props.update();
+  };
 }
 
 export default Box;

@@ -17,7 +17,7 @@ class Tracker extends Component {
           {
             company: "Amazon",
             position: "SDE",
-            status: "onsite",
+            status: "Onsite",
             date: "2020-01-26",
             portal: "URL",
             resume: "URL"
@@ -75,6 +75,8 @@ class Tracker extends Component {
       </Container>
     );
   }
+
+  update = () => {};
 }
 
 export default withRouter(Tracker);

@@ -12,6 +12,7 @@ import Col from "react-bootstrap/Col";
 
 class AppRow extends Component {
   state = {
+    status: this.props.application.status,
     portal: "URL",
     resume: "URL"
   };
@@ -40,7 +41,6 @@ class AppRow extends Component {
 
   render() {
     const { application } = this.props;
-    console.log(this.props);
 
     return (
       <div className="applicationRow" style={this.rowStyle}>
@@ -56,13 +56,40 @@ class AppRow extends Component {
           <Col xs={2}>
             <Dropdown>
               <Dropdown.Toggle variant="" id="dropdown-basic">
-                Onsite
+                {this.state.status}
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Phone Interview</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Offer</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Reject</Dropdown.Item>
+                <Dropdown.Item
+                  href="#/action-1"
+                  onClick={e => this.onClick("Onsite")}
+                >
+                  Onsite
+                </Dropdown.Item>
+                <Dropdown.Item
+                  href="#/action-2"
+                  onClick={e => this.onClick("Video Interview")}
+                >
+                  Video Interview
+                </Dropdown.Item>
+                <Dropdown.Item
+                  href="#/action-3"
+                  onClick={e => this.onClick("Phone Interview")}
+                >
+                  Phone Interview
+                </Dropdown.Item>
+                <Dropdown.Item
+                  href="#/action-4"
+                  onClick={e => this.onClick("Offer")}
+                >
+                  Offer
+                </Dropdown.Item>
+                <Dropdown.Item
+                  href="#/action-5"
+                  onClick={e => this.onClick("Rejected")}
+                >
+                  Rejected
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Col>
@@ -98,6 +125,10 @@ class AppRow extends Component {
         />
       );
     }
+  };
+
+  onClick = newStatus => {
+    this.setState({ status: newStatus });
   };
 
   onChange = (jsDate, dateString) => {
