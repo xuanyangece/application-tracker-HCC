@@ -3,6 +3,15 @@
   height: 10%;
 }
 
+.firstbuttonmiddle {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.secondbuttonmiddle {
+  margin-top: 10px;
+}
+
 .newappform {
   margin-top: 80px;
   text-align: center;

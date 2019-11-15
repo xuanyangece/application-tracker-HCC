@@ -14,6 +14,7 @@ class addedNewApplication extends Component {
       {
         id: 0,
         title: "Upcoming",
+        clsn: "applicationBox upcoming",
         applications: [
           {
             company: "Amazon",
@@ -36,6 +37,7 @@ class addedNewApplication extends Component {
       {
         id: 1,
         title: "Pending",
+        clsn: "applicationBox pending",
         applications: [
           {
             company: "Citrix",
@@ -50,6 +52,7 @@ class addedNewApplication extends Component {
       {
         id: 2,
         title: "Done",
+        clsn: "applicationBox done",
         applications: [
           {
             company: "Facebook",
@@ -75,7 +78,7 @@ class addedNewApplication extends Component {
   render() {
     return (
       <Container style={container}>
-        <Jumbotron>
+        <Jumbotron className="jbt">
           {this.renderAlert()}
           <Header />
           {this.state.boxes.map(box => (
