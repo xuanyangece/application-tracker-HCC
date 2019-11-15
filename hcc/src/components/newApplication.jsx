@@ -16,8 +16,8 @@ class NewApplication extends Component {
           <p className="titles">New Application</p>
           <Input required={true} title="Company" />
           <Input required={true} title="Position" />
-          <Input required={false} title="Position Link" />
           <Input required={true} title="Date applied" />
+          <Input required={false} title="Position Link" />
           <Input required={false} title="Portal Link" />
           <label style={{ paddingRight: 250, marginRight: 180 }}>Resume</label>
           {this.renderUpload()}
@@ -37,7 +37,7 @@ class NewApplication extends Component {
 
   renderAddButton = () => {
     return (
-      <Link to="/">
+      <Link to="/addednewapp">
         <button className="btn-primary btn-lg m-1">Complete</button>
       </Link>
     );

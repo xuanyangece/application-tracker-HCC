@@ -5,6 +5,7 @@ import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
 import Tracker from "./components/tracker.jsx";
 import NewApplication from "./components/newApplication";
+import addedNewApplication from "./components/addedNewApplication";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 const app = (
@@ -12,6 +13,7 @@ const app = (
     <Switch>
       <Route path="/" exact component={Tracker} />
       <Route path="/newapp" exact component={NewApplication} />
+      <Route path="/addednewapp" exact component={addedNewApplication} />
     </Switch>
   </BrowserRouter>
 );
