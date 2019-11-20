@@ -28,6 +28,15 @@ class ButtonBar extends Component {
               >
                 <div>
                   <GiSpaceSuit />
+                  <p
+                    style={{
+                      display: "inline",
+                      paddingLeft: "30px",
+                      fontSize: "2em"
+                    }}
+                  >
+                    Applycation Tracker
+                  </p>
                 </div>
               </IconContext.Provider>
             </Col>

@@ -40,7 +40,7 @@ class Box extends Component {
           </Col>
 
           <Col xs={1}>
-            <p className="appTitle"> CV</p>
+            <p className="appTitle"> Resume</p>
           </Col>
 
           <Col xs={1}>

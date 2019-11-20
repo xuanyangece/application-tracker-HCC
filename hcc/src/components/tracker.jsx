@@ -27,7 +27,7 @@ class Tracker extends Component {
       },
       {
         id: 1,
-        title: "Pending",
+        title: "Waiting for response",
         clsn: "applicationBox pending",
         applications: [
           {
