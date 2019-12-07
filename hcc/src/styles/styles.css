@@ -72,3 +72,11 @@
 .done {
   background-color: rgb(182, 215, 168);
 }
+
+.timelineBox {
+  border: brown;
+}
+
+.timelineTitle {
+  font-weight: bold;
+}
