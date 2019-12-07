@@ -6,6 +6,7 @@ import "rc-datepicker/lib/style.css";
 import { TiBusinessCard } from "react-icons/ti";
 import { MdInsertLink } from "react-icons/md";
 import { IconContext } from "react-icons";
+import { Link } from "react-router-dom";
 import "../styles/styles.css";
 
 import Row from "react-bootstrap/Row";
@@ -170,6 +171,8 @@ class AppRow extends Component {
       return <Button variant="dark">Update</Button>;
     }
   };
+
+  decideLink = () => {};
 
   onClick = newStatus => {
     this.setState({ status: newStatus });
