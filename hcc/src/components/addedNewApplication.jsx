@@ -36,22 +36,22 @@ class addedNewApplication extends Component {
       },
       {
         id: 1,
-        title: "Pending",
+        title: "Waiting for results",
         clsn: "applicationBox pending",
         applications: [
-          {
-            company: "Duke 597",
-            position: "TA",
-            status: "Onsite",
-            date: "2019-11-20",
-            portal: "URL",
-            resume: "URL"
-          },
           {
             company: "Nike",
             position: "Sales",
             status: "Phone Interview",
             date: "2019-11-11",
+            portal: "URL",
+            resume: "URL"
+          },
+          {
+            company: "Duke 597",
+            position: "TA",
+            status: "Onsite",
+            date: "2019-11-20",
             portal: "URL",
             resume: "URL"
           },

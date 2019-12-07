@@ -6,8 +6,9 @@ import { container } from "../styles/styles.css";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import { withRouter } from "react-router-dom";
 
-class Tracker extends Component {
+class updateUpcomingDate extends Component {
   state = {
+    alert: true,
     boxes: [
       {
         id: 0,
@@ -15,10 +16,18 @@ class Tracker extends Component {
         clsn: "applicationBox upcoming",
         applications: [
           {
+            company: "J.P.Morgan",
+            position: "Actuary",
+            status: "Phone Interview",
+            date: "2019-1-28",
+            portal: "URL",
+            resume: "URL"
+          },
+          {
             company: "Amazon",
             position: "SDE",
             status: "Onsite",
-            date: "2020-01-26",
+            date: "2020-02-02",
             portal: "URL",
             resume: "URL"
           }
@@ -93,8 +102,6 @@ class Tracker extends Component {
       </Container>
     );
   }
-
-  update = () => {};
 }
 
-export default withRouter(Tracker);
+export default updateUpcomingDate;
