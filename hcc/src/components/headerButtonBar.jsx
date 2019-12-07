@@ -35,7 +35,7 @@ class ButtonBar extends Component {
                       fontSize: "2em"
                     }}
                   >
-                    Easy Apply
+                    EasyApply
                   </p>
                 </div>
               </IconContext.Provider>
