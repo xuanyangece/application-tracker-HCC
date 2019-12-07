@@ -28,7 +28,7 @@ class addedNewApplication extends Component {
             company: "J.P.Morgan",
             position: "Actuary",
             status: "Phone Interview",
-            date: "2019-11-26",
+            date: "2019-1-28",
             portal: "URL",
             resume: "URL"
           }
@@ -44,6 +44,14 @@ class addedNewApplication extends Component {
             position: "SDE",
             status: "Video Interview",
             date: "2020-01-11",
+            portal: "URL",
+            resume: "URL"
+          },
+          {
+            company: "Duke 597",
+            position: "TA",
+            status: "Onsite",
+            date: "2020-05-11",
             portal: "URL",
             resume: "URL"
           }

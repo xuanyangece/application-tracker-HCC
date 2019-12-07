@@ -8,7 +8,6 @@ import { withRouter } from "react-router-dom";
 
 class Tracker extends Component {
   state = {
-    count: 0,
     boxes: [
       {
         id: 0,
@@ -27,14 +26,30 @@ class Tracker extends Component {
       },
       {
         id: 1,
-        title: "Waiting for response",
+        title: "Pending",
         clsn: "applicationBox pending",
         applications: [
           {
             company: "Citrix",
             position: "SDE",
             status: "Video Interview",
-            date: "2020-01-11",
+            date: "2019-10-20",
+            portal: "URL",
+            resume: "URL"
+          },
+          {
+            company: "Duke 597",
+            position: "TA",
+            status: "Onsite",
+            date: "2019-12-10",
+            portal: "URL",
+            resume: "URL"
+          },
+          {
+            company: "Nike",
+            position: "Sales",
+            status: "Phone Interview",
+            date: "2019-11-11",
             portal: "URL",
             resume: "URL"
           }
