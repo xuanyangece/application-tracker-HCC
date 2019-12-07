@@ -51,52 +51,11 @@ class AppRow extends Component {
             <p style={this.pStyle}>{application.position}</p>
           </Col>
 
-          <Col xs={2}>
-            <Dropdown>
-              <Dropdown.Toggle variant="light btn-block" id="dropdown-basic">
-                {this.state.status}
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Dropdown.Item
-                  href="#/action-1"
-                  onClick={e => this.onClick("Onsite")}
-                >
-                  Onsite
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#/action-2"
-                  onClick={e => this.onClick("Video Interview")}
-                >
-                  Video Interview
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#/action-3"
-                  onClick={e => this.onClick("Phone Interview")}
-                >
-                  Phone Interview
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#/action-4"
-                  onClick={e => this.onClick("Offer")}
-                >
-                  Offer
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#/action-5"
-                  onClick={e => this.onClick("Rejected")}
-                >
-                  Rejected
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </Col>
+          <Col xs={2}>{this.renderStatus(application)}</Col>
 
           <Col xs={3}>{this.dateDisplay(application)}</Col>
 
-          <Col>
-            <Button variant="dark">Update</Button>
-          </Col>
+          <Col>{this.renderUpdateButton(application)}</Col>
 
           <Col xs={1}>
             <a
@@ -154,6 +113,61 @@ class AppRow extends Component {
           style={this.calStyle}
         />
       );
+    }
+  };
+
+  renderStatus = application => {
+    if (application.status == "Offer" || application.status == "Rejected") {
+      return <p style={this.pStyle}>{this.props.application.status}</p>;
+    } else {
+      return (
+        <Dropdown>
+          <Dropdown.Toggle variant="light btn-block" id="dropdown-basic">
+            {this.state.status}
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item
+              href="#/action-1"
+              onClick={e => this.onClick("Onsite")}
+            >
+              Onsite
+            </Dropdown.Item>
+            <Dropdown.Item
+              href="#/action-2"
+              onClick={e => this.onClick("Video Interview")}
+            >
+              Video Interview
+            </Dropdown.Item>
+            <Dropdown.Item
+              href="#/action-3"
+              onClick={e => this.onClick("Phone Interview")}
+            >
+              Phone Interview
+            </Dropdown.Item>
+            <Dropdown.Item
+              href="#/action-4"
+              onClick={e => this.onClick("Offer")}
+            >
+              Offer
+            </Dropdown.Item>
+            <Dropdown.Item
+              href="#/action-5"
+              onClick={e => this.onClick("Rejected")}
+            >
+              Rejected
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+      );
+    }
+  };
+
+  renderUpdateButton = application => {
+    if (application.status == "Offer" || application.status == "Rejected") {
+      return <Button variant="info">Timeline</Button>;
+    } else {
+      return <Button variant="dark">Update</Button>;
     }
   };
 
