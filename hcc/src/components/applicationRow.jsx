@@ -167,26 +167,39 @@ class AppRow extends Component {
   renderUpdateButton = application => {
     if (application.status == "Offer" || application.status == "Rejected") {
       return (
-        <Button variant="info" onClick={this.nextPage}>
-          Timeline
-        </Button>
+        <Link to={this.nextPage}>
+          <Button variant="info">Timeline</Button>
+        </Link>
       );
     } else {
       return (
-        <Button variant="dark" onClick={this.nextPage}>
-          Update
-        </Button>
+        <Link to={this.nextPage}>
+          <Button variant="dark">Update</Button>
+        </Link>
       );
     }
   };
 
   nextPage = () => {
-    if (this.props.application.company == "Amazon") {
-    } else if (this.props.application.company == "Nike") {
+    const company = this.props.application.company;
+    const status = this.props.application.status;
+    console.log(company);
+    if (company === "Amazon") {
+      return "/updateupcomingdate";
+    } else if (company === "Nike") {
+      return "/waittoupcoming";
+    } else if (status === "Onsite" && company === "Duke 597") {
+      return "/waittodone";
+    } else if (
+      company === "Bloomberg" ||
+      company === "Facebook" ||
+      (company === "Duke 597" && status === "Offer")
+    ) {
+      return "/timeline";
+    } else {
+      return "/addednewapp";
     }
   };
-
-  decideLink = () => {};
 
   onClick = newStatus => {
     this.setState({ status: newStatus });
