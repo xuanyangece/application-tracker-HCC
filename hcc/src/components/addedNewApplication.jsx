@@ -40,18 +40,26 @@ class addedNewApplication extends Component {
         clsn: "applicationBox pending",
         applications: [
           {
-            company: "Citrix",
-            position: "SDE",
-            status: "Video Interview",
-            date: "2020-01-11",
-            portal: "URL",
-            resume: "URL"
-          },
-          {
             company: "Duke 597",
             position: "TA",
             status: "Onsite",
             date: "2020-05-11",
+            portal: "URL",
+            resume: "URL"
+          },
+          {
+            company: "Nike",
+            position: "Sales",
+            status: "Phone Interview",
+            date: "2019-11-11",
+            portal: "URL",
+            resume: "URL"
+          },
+          {
+            company: "Citrix",
+            position: "SDE",
+            status: "Video Interview",
+            date: "2020-01-11",
             portal: "URL",
             resume: "URL"
           }
