@@ -27,6 +27,16 @@ class AppRow extends Component {
     width: "200px",
     display: "inline-block"
   };
+
+  iconStyle = {
+    color: "black",
+    $nest: {
+      "&:hover": {
+        color: "red"
+      }
+    }
+  };
+
   render() {
     const { application } = this.props;
 
@@ -89,29 +99,43 @@ class AppRow extends Component {
           </Col>
 
           <Col xs={1}>
-            <IconContext.Provider
-              value={{
-                className: "global-class-name",
-                size: "2em"
-              }}
+            <a
+              href="https://drive.google.com/file/d/1_cWZgbPpZAYvHbXuQwi2cinc2XpJBYIv/view?usp=sharing"
+              className="icons"
+              style={this.iconStyle}
             >
-              <div>
-                <TiBusinessCard />
-              </div>
-            </IconContext.Provider>
+              {""}
+              <IconContext.Provider
+                value={{
+                  className: "global-class-name",
+                  size: "2em"
+                }}
+              >
+                <div>
+                  <TiBusinessCard />
+                </div>
+              </IconContext.Provider>
+            </a>
           </Col>
 
           <Col xs={1}>
-            <IconContext.Provider
-              value={{
-                className: "global-class-name",
-                size: "2em"
-              }}
+            <a
+              href="https://www.amazon.jobs/en/jobs/908703/software-development-engineer-2020-united-states?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+              className="icons"
+              style={this.iconStyle}
             >
-              <div>
-                <MdInsertLink />
-              </div>
-            </IconContext.Provider>
+              {" "}
+              <IconContext.Provider
+                value={{
+                  className: "global-class-name",
+                  size: "2em"
+                }}
+              >
+                <div>
+                  <MdInsertLink />
+                </div>
+              </IconContext.Provider>
+            </a>
           </Col>
         </Row>
       </div>
