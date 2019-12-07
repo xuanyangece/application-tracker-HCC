@@ -43,7 +43,7 @@ class addedNewApplication extends Component {
             company: "Duke 597",
             position: "TA",
             status: "Onsite",
-            date: "2020-05-11",
+            date: "2019-11-20",
             portal: "URL",
             resume: "URL"
           },
@@ -59,7 +59,7 @@ class addedNewApplication extends Component {
             company: "Citrix",
             position: "SDE",
             status: "Video Interview",
-            date: "2020-01-11",
+            date: "2019-12-01",
             portal: "URL",
             resume: "URL"
           }
