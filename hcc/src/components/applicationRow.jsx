@@ -166,9 +166,23 @@ class AppRow extends Component {
 
   renderUpdateButton = application => {
     if (application.status == "Offer" || application.status == "Rejected") {
-      return <Button variant="info">Timeline</Button>;
+      return (
+        <Button variant="info" onClick={this.nextPage}>
+          Timeline
+        </Button>
+      );
     } else {
-      return <Button variant="dark">Update</Button>;
+      return (
+        <Button variant="dark" onClick={this.nextPage}>
+          Update
+        </Button>
+      );
+    }
+  };
+
+  nextPage = () => {
+    if (this.props.application.company == "Amazon") {
+    } else if (this.props.application.company == "Nike") {
     }
   };
 
