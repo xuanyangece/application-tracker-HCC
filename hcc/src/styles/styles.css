@@ -99,3 +99,16 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.stat-result {
+  text-align: left;
+  margin-left: 30px;
+}
+
+#offer {
+  color: rgb(39, 138, 39);
+}
+
+#rejected {
+  color: rgb(211, 51, 51);
+}

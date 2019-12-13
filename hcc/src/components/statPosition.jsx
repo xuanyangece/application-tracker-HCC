@@ -29,7 +29,7 @@ class timeline extends Component {
   renderAddButton = () => {
     return (
       <Link to="/statresult">
-        <button className="btn-primary btn-lg m-1">See Data</button>
+        <button className="btn-outline-success btn-lg m-1">See Data</button>
       </Link>
     );
   };
@@ -37,7 +37,9 @@ class timeline extends Component {
   renderGoBackButton = () => {
     return (
       <Link to="/">
-        <button className="btn-primary btn-lg m-1">Back To Dashboard</button>
+        <button className="btn-outline-dark btn-lg m-1">
+          Back To Dashboard
+        </button>
       </Link>
     );
   };

@@ -31,7 +31,9 @@ class timeline extends Component {
   renderAddButton = () => {
     return (
       <Link to="/statposition">
-        <button className="btn-primary btn-lg m-1">Select Position</button>
+        <button className="btn-outline-success btn-lg m-1">
+          Select Position
+        </button>
       </Link>
     );
   };
@@ -39,30 +41,12 @@ class timeline extends Component {
   renderGoBackButton = () => {
     return (
       <Link to="/">
-        <button className="btn-primary btn-lg m-1">Back To Dashboard</button>
+        <button className="btn-outline-dark btn-lg m-1">
+          Back To Dashboard
+        </button>
       </Link>
     );
   };
-
-  //   renderUpload = () => {
-  //     return <button className="btn-primary btn-sm m-2">Upload</button>;
-  //   };
-
-  //   toggleRefered = prevState => {
-  //     this.setState(prevState => ({ refered: !prevState.refered }));
-  //   };
-
-  //   renderReferButton = () => {
-  //     return this.state.refered ? (
-  //       <button onClick={this.toggleRefered} className="btn-primary btn-sm m-2">
-  //         Yes
-  //       </button>
-  //     ) : (
-  //       <button onClick={this.toggleRefered} className="btn-warning btn-sm m-2">
-  //         No
-  //       </button>
-  //     );
-  //   };
 }
 
 export default timeline;
