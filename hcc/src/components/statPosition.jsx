@@ -29,7 +29,7 @@ class timeline extends Component {
   renderAddButton = () => {
     return (
       <Link to="/addednewapp">
-        <button className="btn-primary btn-lg m-1">Submit</button>
+        <button className="btn-primary btn-lg m-1">See Data</button>
       </Link>
     );
   };

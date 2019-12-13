@@ -10,8 +10,6 @@ import {
   secondbuttonmiddle
 } from "../styles/styles.css";
 import { Link } from "react-router-dom";
-import { GiSpaceSuit } from "react-icons/gi";
-import { IconContext } from "react-icons";
 import Button from "react-bootstrap/Button";
 import logo from "../styles/logo.png";
 
@@ -40,7 +38,9 @@ class ButtonBar extends Component {
             </Link>
           </Col>
           <Col xs={2} className="secondbuttonmiddle">
-            <Button variant="light">Job Data</Button>
+            <Link to="/statcompany">
+              <Button variant="light">Job Data</Button>
+            </Link>
           </Col>
         </Row>
       </div>
