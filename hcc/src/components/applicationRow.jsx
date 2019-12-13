@@ -51,13 +51,6 @@ class AppRow extends Component {
           <Col sm={1}>
             <p style={this.pStyle}>{application.position}</p>
           </Col>
-
-          <Col xs={2}>{this.renderStatus(application)}</Col>
-
-          <Col xs={3}>{this.dateDisplay(application)}</Col>
-
-          <Col>{this.renderUpdateButton(application)}</Col>
-
           <Col xs={1}>
             <a
               href="https://drive.google.com/file/d/1_cWZgbPpZAYvHbXuQwi2cinc2XpJBYIv/view?usp=sharing"
@@ -97,6 +90,11 @@ class AppRow extends Component {
               </IconContext.Provider>
             </a>
           </Col>
+          <Col xs={2}>{this.renderStatus(application)}</Col>
+
+          <Col xs={3}>{this.dateDisplay(application)}</Col>
+
+          <Col xs={2}>{this.renderUpdateButton(application)}</Col>
         </Row>
       </div>
     );

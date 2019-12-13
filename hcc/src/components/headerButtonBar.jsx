@@ -18,7 +18,7 @@ class ButtonBar extends Component {
     return (
       <div style={header}>
         <Row>
-          <Col xs={8}>
+          <Col xs={7}>
             <div className="logo-header">
               <img src={logo} style={{ width: 80, height: 80 }} />
               <p
@@ -36,12 +36,16 @@ class ButtonBar extends Component {
           </Col>
           <Col xs={2.5} className="firstbuttonmiddle">
             <Link to="/newapp">
-              <Button variant="light">New Application</Button>
+              <Button variant="outline-info" size="lg">
+                New Application
+              </Button>
             </Link>
           </Col>
           <Col xs={2} className="secondbuttonmiddle">
             <Link to="/statcompany">
-              <Button variant="light">Job Data</Button>
+              <Button variant="outline-info" size="lg">
+                Job Data
+              </Button>
             </Link>
           </Col>
         </Row>

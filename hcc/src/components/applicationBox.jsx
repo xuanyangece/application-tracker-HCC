@@ -27,24 +27,19 @@ class Box extends Component {
             <p className="appTitle"> Position </p>
           </Col>
 
-          <Col xs={2}>
-            <p className="appTitle"> {this.space} Status </p>
-          </Col>
-
-          <Col xs={3}>
-            <p className="appTitle"> Date </p>
-          </Col>
-
-          <Col>
-            <p className="appTitle"> Update Status/Date</p>
-          </Col>
-
           <Col xs={1}>
             <p className="appTitle"> Resume</p>
           </Col>
 
           <Col xs={1}>
             <p className="appTitle"> Portal</p>
+          </Col>
+          <Col xs={2}>
+            <p className="appTitle"> {this.space} Status </p>
+          </Col>
+
+          <Col xs={3}>
+            <p className="appTitle"> Date </p>
           </Col>
         </Row>
 
