@@ -12,6 +12,7 @@ import waitToUpcoming from "./components/updateWaitToUpcoming";
 import waitToDone from "./components/updateWaitToDone";
 import statCompany from "./components/statCompany";
 import statPosition from "./components/statPosition";
+import statResult from "./components/statResult";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 const app = (
@@ -26,6 +27,7 @@ const app = (
       <Route path="/waittodone" exact component={waitToDone} />
       <Route path="/statcompany" exact component={statCompany} />
       <Route path="/statposition" exact component={statPosition} />
+      <Route path="/statresult" exact component={statResult} />
     </Switch>
   </BrowserRouter>
 );
