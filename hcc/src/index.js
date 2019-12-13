@@ -11,6 +11,7 @@ import updateUpcomingDate from "./components/updateUpcomingDate";
 import waitToUpcoming from "./components/updateWaitToUpcoming";
 import waitToDone from "./components/updateWaitToDone";
 import statCompany from "./components/statCompany";
+import statPosition from "./components/statPosition";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 const app = (
