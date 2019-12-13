@@ -7,14 +7,8 @@ import Col from "react-bootstrap/Col";
 import { Checkbox } from "semantic-ui-react";
 
 class timeline extends Component {
-  state = {
-    refered: false
-  };
+  state = {};
 
-  titleStyle = {
-    paddingLeft: "0px",
-    paddingRight: "0px"
-  };
   render() {
     return (
       <div>
