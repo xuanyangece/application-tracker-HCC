@@ -4,6 +4,7 @@ import Alert from "react-bootstrap/Alert";
 import "../styles/styles.css";
 import Input from "./inputGroup";
 import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
 
 class NewApplication extends Component {
   state = {
@@ -28,7 +29,7 @@ class NewApplication extends Component {
         </Container>
 
         <Container className="newappbuttons">
-          {this.renderAddButton()}
+          {this.renderAddButton()} <label style={{ width: "8%" }}> </label>
           {this.renderCancelButton()}
         </Container>
       </div>
@@ -38,7 +39,9 @@ class NewApplication extends Component {
   renderAddButton = () => {
     return (
       <Link to="/addednewapp">
-        <button className="btn-primary btn-lg m-1">Complete</button>
+        <Button variant="outline-info" size="lg">
+          Complete
+        </Button>
       </Link>
     );
   };
@@ -46,13 +49,15 @@ class NewApplication extends Component {
   renderCancelButton = () => {
     return (
       <Link to="/">
-        <button className="btn-primary btn-lg m-1">Cancel</button>
+        <Button variant="outline-info" size="lg">
+          Cancel
+        </Button>
       </Link>
     );
   };
 
   renderUpload = () => {
-    return <button className="btn-primary btn-sm m-2">Upload</button>;
+    return <button className="btn-info btn-sm m-2">Upload</button>;
   };
 
   toggleRefered = prevState => {
@@ -61,7 +66,7 @@ class NewApplication extends Component {
 
   renderReferButton = () => {
     return this.state.refered ? (
-      <button onClick={this.toggleRefered} className="btn-primary btn-sm m-2">
+      <button onClick={this.toggleRefered} className="btn-info btn-sm m-2">
         Yes
       </button>
     ) : (
