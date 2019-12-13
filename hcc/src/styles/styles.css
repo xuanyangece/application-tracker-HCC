@@ -80,3 +80,12 @@
 .timelineTitle {
   font-weight: bold;
 }
+
+.checkbox {
+  text-align: left;
+}
+
+.hidden {
+  margin-right: 20px;
+  margin-left: 100px;
+}
