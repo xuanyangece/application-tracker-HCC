@@ -24,6 +24,7 @@ const app = (
       <Route path="/waittoupcoming" exact component={waitToUpcoming} />
       <Route path="/waittodone" exact component={waitToDone} />
       <Route path="/statcompany" exact component={statCompany} />
+      <Route path="/statposition" exact component={statPosition} />
     </Switch>
   </BrowserRouter>
 );
