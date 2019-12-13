@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import "../styles/styles.css";
 import { Link } from "react-router-dom";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import { Checkbox } from "semantic-ui-react";
+import Button from "react-bootstrap/Button";
 
 class timeline extends Component {
   state = {};
@@ -22,6 +21,7 @@ class timeline extends Component {
 
         <Container className="newappbuttons">
           {this.renderAddButton()}
+          <label style={{ width: "5%" }}></label>
           {this.renderGoBackButton()}
         </Container>
       </div>
@@ -31,7 +31,9 @@ class timeline extends Component {
   renderAddButton = () => {
     return (
       <Link to="/statposition">
-        <button className="btn-outline-info btn-lg m-1">Select Position</button>
+        <Button variant="outline-info" size="lg">
+          Select Position
+        </Button>
       </Link>
     );
   };
@@ -39,9 +41,9 @@ class timeline extends Component {
   renderGoBackButton = () => {
     return (
       <Link to="/waittodone">
-        <button className="btn-outline-dark btn-lg m-1">
+        <Button variant="outline-info" size="lg">
           Back To Dashboard
-        </button>
+        </Button>
       </Link>
     );
   };

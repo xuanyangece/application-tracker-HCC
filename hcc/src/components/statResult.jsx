@@ -2,9 +2,7 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import "../styles/styles.css";
 import { Link } from "react-router-dom";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { Checkbox } from "semantic-ui-react";
+import Button from "react-bootstrap/Button";
 
 class timeline extends Component {
   state = {};
@@ -44,9 +42,9 @@ class timeline extends Component {
   renderGoBackButton = () => {
     return (
       <Link to="/waittodone">
-        <button className="btn-outline-dark btn-lg m-1">
+        <Button variant="outline-info" size="lg">
           Back To Dashboard
-        </button>
+        </Button>
       </Link>
     );
   };
