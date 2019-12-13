@@ -21,7 +21,7 @@ class ButtonBar extends Component {
       <div style={header}>
         <Row>
           <Col xs={8}>
-            <div>
+            <div className="logo-header">
               <img src={logo} style={{ width: 80, height: 80 }} />
               <p
                 style={{

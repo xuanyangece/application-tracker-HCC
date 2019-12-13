@@ -8,12 +8,12 @@
 }
 
 .firstbuttonmiddle {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 20px;
 }
 
 .secondbuttonmiddle {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .newappform {
@@ -92,4 +92,9 @@
 .hidden {
   margin-right: 20px;
   margin-left: 100px;
+}
+
+.logo-header {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
