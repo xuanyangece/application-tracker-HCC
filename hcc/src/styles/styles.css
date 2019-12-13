@@ -3,6 +3,10 @@
   height: 10%;
 }
 
+.header {
+  margin: "50px auto";
+}
+
 .firstbuttonmiddle {
   margin-top: 10px;
   margin-left: 20px;

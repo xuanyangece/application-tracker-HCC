@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import {
   container,
+  header,
   firstbuttonmiddle,
   secondbuttonmiddle
 } from "../styles/styles.css";
@@ -12,45 +13,37 @@ import { Link } from "react-router-dom";
 import { GiSpaceSuit } from "react-icons/gi";
 import { IconContext } from "react-icons";
 import Button from "react-bootstrap/Button";
+import logo from "../styles/logo.png";
 
 class ButtonBar extends Component {
   render() {
     return (
-      <Container style={container}>
-        <Jumbotron className="sub-jbt">
-          <Row>
-            <Col xs={8}>
-              <IconContext.Provider
-                value={{
-                  className: "global-class-name",
-                  size: "4em"
+      <div style={header}>
+        <Row>
+          <Col xs={8}>
+            <div>
+              <img src={logo} style={{ width: 80, height: 80 }} />
+              <p
+                style={{
+                  display: "inline",
+                  paddingLeft: "30px",
+                  fontSize: "2em"
                 }}
               >
-                <div>
-                  <GiSpaceSuit />
-                  <p
-                    style={{
-                      display: "inline",
-                      paddingLeft: "30px",
-                      fontSize: "2em"
-                    }}
-                  >
-                    EasyApply
-                  </p>
-                </div>
-              </IconContext.Provider>
-            </Col>
-            <Col xs={2.5} className="firstbuttonmiddle">
-              <Link to="/newapp">
-                <Button variant="light">New Application</Button>
-              </Link>
-            </Col>
-            <Col xs={2} className="secondbuttonmiddle">
-              <Button variant="light">Job Data</Button>
-            </Col>
-          </Row>
-        </Jumbotron>
-      </Container>
+                EasyApply
+              </p>
+            </div>
+          </Col>
+          <Col xs={2.5} className="firstbuttonmiddle">
+            <Link to="/newapp">
+              <Button variant="light">New Application</Button>
+            </Link>
+          </Col>
+          <Col xs={2} className="secondbuttonmiddle">
+            <Button variant="light">Job Data</Button>
+          </Col>
+        </Row>
+      </div>
     );
   }
 }
