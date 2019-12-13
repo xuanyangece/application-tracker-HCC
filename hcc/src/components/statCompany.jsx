@@ -31,9 +31,7 @@ class timeline extends Component {
   renderAddButton = () => {
     return (
       <Link to="/statposition">
-        <button className="btn-outline-success btn-lg m-1">
-          Select Position
-        </button>
+        <button className="btn-outline-info btn-lg m-1">Select Position</button>
       </Link>
     );
   };
