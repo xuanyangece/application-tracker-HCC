@@ -28,7 +28,7 @@ class timeline extends Component {
 
   renderAddButton = () => {
     return (
-      <Link to="/addednewapp">
+      <Link to="/statresult">
         <button className="btn-primary btn-lg m-1">See Data</button>
       </Link>
     );

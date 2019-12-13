@@ -25,7 +25,9 @@ class ButtonBar extends Component {
                 style={{
                   display: "inline",
                   paddingLeft: "30px",
-                  fontSize: "2em"
+                  fontSize: "2em",
+                  position: "absolute",
+                  bottom: "20px"
                 }}
               >
                 EasyApply
