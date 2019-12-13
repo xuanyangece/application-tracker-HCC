@@ -43,7 +43,7 @@ class timeline extends Component {
 
   renderGoBackButton = () => {
     return (
-      <Link to="/">
+      <Link to="/waittodone">
         <button className="btn-outline-dark btn-lg m-1">
           Back To Dashboard
         </button>

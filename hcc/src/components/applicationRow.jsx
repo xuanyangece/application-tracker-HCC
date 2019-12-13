@@ -195,7 +195,7 @@ class AppRow extends Component {
     ) {
       return "/timeline";
     } else {
-      return "/addednewapp";
+      return "";
     }
   };
 
